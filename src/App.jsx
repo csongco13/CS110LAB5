@@ -5,7 +5,7 @@ import Title from "./components/Title";
 import List from "./components/List";
 import Pagination from "./components/Pagination";
 
-const API_KEY = "6LzGRSUGPW90sKE1bZMdixJvzbRAGk3s5ufXzvR6cdnuLUZc";
+const API_KEY = "";
 
 function App() {
   const [sort, setSort] = useState("viewed");
