@@ -1,19 +1,7 @@
-function Title({ sort, time }) {
-  const sortText = {
-    viewed: "Most Viewed",
-    shared: "Most Shared",
-    emailed: "Most Emailed",
-  };
-
-  const timeText = {
-    1: "Day",
-    7: "Week",
-    30: "Month",
-  };
-
+function Title({ title }) {
   return (
     <h1 id="articles-title" className="articles-title">
-      {sortText[sort]} - {timeText[time]}
+      {title}
     </h1>
   );
 }

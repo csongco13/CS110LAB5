@@ -1,4 +1,4 @@
-function Sidebar({ sort, time, articleCount, setSort, setTime, setArticleCount }) {
+function Sidebar({ sort, time, articleCount, setSort, setTime, changeArticleCount }) {
   return (
     <aside id="filter-panel" className="filter-panel">
       <input
@@ -6,7 +6,7 @@ function Sidebar({ sort, time, articleCount, setSort, setTime, setArticleCount }
         className="article-count-input"
         type="number"
         value={articleCount}
-        onChange={(e) => setArticleCount(e.target.value)}
+        onChange={(e) => changeArticleCount(e.target.value)}
       />
 
       <button id="search-button" className="search-button">
